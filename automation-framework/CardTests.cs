@@ -13,6 +13,7 @@ namespace automation_framework
         public void Setup()
         {
             driver = new EdgeDriver(Path.GetFullPath(@"../../../" + "_drivers"));
+            driver.Manage().Window.Maximize();
         }
 
         [Test]
@@ -21,7 +22,10 @@ namespace automation_framework
             // 1. Go to statsroyale.com
             driver.Url = "https://statsroyale.com/";
             // 2. Click on the cards link
+            driver.FindElement(By.CssSelector("a[href='/cards']")).Click();
             // 3. Assert ice spirit is displayed
+            var iceSpirit = driver.FindElement(By.CssSelector("a[href*='Ice+Spirit']"));
+            Assert.That(iceSpirit.Displayed);
          }
 
         [TearDown]
