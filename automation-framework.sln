@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "automation-framework", "automation-framework\automation-framework.csproj", "{87BB68FB-F4E2-44F8-85F0-0179488E9B15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Royale", "Royale\Royale.csproj", "{2FDD2622-3942-4DD2-B144-1C3EC10D2146}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Royale", "Royale\Royale.csproj", "{2FDD2622-3942-4DD2-B144-1C3EC10D2146}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

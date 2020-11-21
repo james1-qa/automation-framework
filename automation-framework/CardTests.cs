@@ -13,7 +13,7 @@ namespace automation_framework
         [SetUp] 
         public void Setup()
         {
-            driver = new ChromeDriver(Path.GetFullPath(@"../../../" + "_drivers"));
+            driver = new ChromeDriver(Path.GetFullPath(@"../../../../" + "_drivers"));
             driver.Manage().Window.Maximize();
             
         }
